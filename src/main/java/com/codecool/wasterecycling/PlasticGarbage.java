@@ -19,7 +19,4 @@ public class PlasticGarbage extends Garbage {
         public String clean() {
                         return "clean";
                 }
-        }
-
-
 }

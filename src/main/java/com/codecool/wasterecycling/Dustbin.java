@@ -21,11 +21,11 @@ public class Dustbin {
 
         public void throwOutGarbage(Garbage garbage) {
                 if (garbage instanceof PlasticGarbage) {
-                        plastic.add(garbage.getGarbage());
+                        plastic.add(garbage.getName());
                 } else if (garbage instanceof PaperGarbage) {
-                        paper.add(garbage.getGarbage());
+                        paper.add(garbage.getName());
                 } else {
-                        houseWaste.add(garbage.getGarbage());
+                        houseWaste.add(garbage.getName());
                 }
         }
 

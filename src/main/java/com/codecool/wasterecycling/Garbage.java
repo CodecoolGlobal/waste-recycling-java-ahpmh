@@ -1,13 +1,13 @@
 package com.codecool.wasterecycling;
 
 public class Garbage {
-        private final String garbage;
+        private final String garbageName;
 
         public Garbage(String garbageName) {
-                this.garbage = garbageName;
+                this.garbageName = garbageName;
         }
 
         public String getName() {
-                return garbage;
+                return garbageName;
         }
 }

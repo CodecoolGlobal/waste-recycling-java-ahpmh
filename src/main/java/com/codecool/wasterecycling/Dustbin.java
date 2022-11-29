@@ -50,12 +50,16 @@ public class Dustbin {
 
 
         public String toString(){
-
-                return null;
+                int numberOfPlastic = getPlasticCount();
+                int numberOfHouseWaste = getHouseWasteCount();
+                int numberOfPaper = getPaperCount();
+                String currentGarbage = String.format("%s Dustbin! \n House waste content: %s item(s) \n Paper content:  %s item(s) \n Plastic content: %s",
+                color, numberOfHouseWaste, numberOfPaper, numberOfPlastic );
+                return currentGarbage;
         }
 
-        private void displayContents(){
-                System.out.println();
+        private void displayContents(Garbage currentGarbage){
+                System.out.println(currentGarbage);
         }
 
 }

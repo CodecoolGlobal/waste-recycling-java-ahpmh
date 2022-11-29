@@ -2,21 +2,18 @@ package com.codecool.wasterecycling;
 
 public class PlasticGarbage extends Garbage {
 
-        private String cleanFlag;
+        private boolean clean;
 
-        public PlasticGarbage(String garbageName, String cleanFlag) {
-                super(garbageName);
-                this.cleanFlag = isClean(cleanFlag);
+        public PlasticGarbage(String garbageName, boolean clean) {
+                super(garbageName);    // meghívja a parent konstruktorát
+                this.clean = clean;
         }
 
-        public String isClean(String cleanFlag) {
-                if (!cleanFlag.equals("clean")) {
-                        return clean();
-                }
-                return cleanFlag;
+        public boolean isClean() {
+                        return clean;
         }
 
-        public String clean() {
-                        return "clean";
+        public void clean() {
+                clean = true;
                 }
 }

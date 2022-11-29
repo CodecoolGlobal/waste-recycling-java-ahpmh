@@ -8,7 +8,7 @@ public class PaperGarbage extends Garbage {
                 this.squeezeFlag = squeezeFlag;
         }
 
-        public boolean isSqueezed(boolean cleanFlag) {
+        public boolean isSqueezed() {
                 return squeezeFlag;
         }
 

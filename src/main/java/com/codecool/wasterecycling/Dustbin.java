@@ -51,11 +51,30 @@ public class Dustbin {
 
 
         public String toString(){
+                String plasticGarbage = "";
+                for (int i = 0; i < plastic.size(); i++) {
+                        plasticGarbage += plastic.get(i).getName() + " nr." + Integer.toString(i+1)+"\n";
+                }
+                String paperGarbage = "";
+                for (int i = 0; i < paper.size(); i++) {
+                        paperGarbage += paper.get(i).getName() + " nr." + Integer.toString(i+1)+"\n";
+                }
+                String other = "";
+                for (int i = 0; i < otherGarbage.size(); i++) {
+                        other += otherGarbage.get(i).getName() + " nr." + Integer.toString(i+1)+"\n";
+                }
+
                 int numberOfPlastic = getPlasticCount();
                 int numberOfHouseWaste = getHouseWasteCount();
                 int numberOfPaper = getPaperCount();
-                String currentGarbage = String.format("%s Dustbin! \n House waste content: %s item(s) \n Paper content:  %s item(s) \n Plastic content: %s item(s)",
-                color, numberOfHouseWaste, numberOfPaper, numberOfPlastic);
+                String currentGarbage = String.format("%s Dustbin! \n " +
+                                "House waste content: %s item(s) \n %s \n"
+                                + "Paper content:  %s item(s) \n %s \n" +
+                                "Plastic content: %s item(s) \n %s",
+                color,
+                        numberOfHouseWaste, other,
+                        numberOfPaper, paperGarbage,
+                                numberOfPlastic, plasticGarbage);
                 return currentGarbage;
         }
 

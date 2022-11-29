@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
             Dustbin basura = new Dustbin("Amarillo");
 
-            Garbage plasticCup = new PlasticGarbage("Plastic Cup", false);
+            Garbage plasticCup = new PlasticGarbage("Dirty Plastic Cup", false);
             Garbage plasticBottle = new PlasticGarbage("Plastic Bottle", true);
             Garbage newspaper = new PaperGarbage("Newspaper", true);
             Garbage botellaDeVinoTinto = new Garbage("Botella de Vino Tinto");

@@ -1,21 +1,18 @@
 package com.codecool.wasterecycling;
 
 public class PaperGarbage extends Garbage {
-        private String squeezeFlag;
+        private boolean squeezeFlag;
 
-        public PaperGarbage(String garbageName, String squeezeFlag) {
+        public PaperGarbage(String garbageName, boolean squeezeFlag) {
                 super(garbageName);
-                this.squeezeFlag = isSqueezed(squeezeFlag);
+                this.squeezeFlag = squeezeFlag;
         }
 
-        public String isSqueezed(String cleanFlag) {
-                if (!cleanFlag.equals("squeeze")) {
-                        return squeeze();
-                }
+        public boolean isSqueezed(boolean cleanFlag) {
                 return squeezeFlag;
         }
 
-        public String squeeze() {
-                return "squeezed";
+        public void squeeze() {
+                squeezeFlag = true;
         }
 }

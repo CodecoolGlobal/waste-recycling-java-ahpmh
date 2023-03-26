@@ -67,9 +67,12 @@ public class Dustbin {
                 int numberOfPlastic = getPlasticCount();
                 int numberOfHouseWaste = getHouseWasteCount();
                 int numberOfPaper = getPaperCount();
-                String currentGarbage = String.format("%s Dustbin! \n " +
-                                "House waste content: %s item(s) \n %s \n"
-                                + "Paper content:  %s item(s) \n %s \n" +
+                String currentGarbage = String.format("%s Dustbin \n "
+                                +
+                                "House waste content: %s item(s) \n %s "
+                                +
+                                "Paper content:  %s item(s) \n %s "
+                                +
                                 "Plastic content: %s item(s) \n %s",
                 color,
                         numberOfHouseWaste, other,
@@ -78,24 +81,8 @@ public class Dustbin {
                 return currentGarbage;
         }
 
-//        private void displayContents(Garbage currentGarbage){
-//                System.out.println(currentGarbage);
-//        }
-//
+
         public void  displayContents(){
                 System.out.println(toString());
         }
-
-
-
 }
-//        Green Dustbin!
-//        House waste content: 2 item(s)
-//        Rotten tomato nr.1
-//        Half-eaten lettuce nr.2
-//        Paper content: 1 item(s)
-//        Failed exam nr.1
-//        Plastic content: 3 item(s)
-//        Empty plastic bottle nr.1
-//        Plastic bag nr.2
-//        Wrapper foil nr.3

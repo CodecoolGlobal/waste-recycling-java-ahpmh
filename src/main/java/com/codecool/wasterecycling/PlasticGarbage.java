@@ -5,7 +5,7 @@ public class PlasticGarbage extends Garbage {
         private boolean clean;
 
         public PlasticGarbage(String garbageName, boolean clean) {
-                super(garbageName);    // meghívja a parent konstruktorát
+                super(garbageName);
                 this.clean = clean;
         }
 
